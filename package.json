@@ -6,7 +6,7 @@
   "jsnext:main": "dist/es/route-node.js",
   "module": "dist/es/route-node.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive \"test/main.js\"",
+    "test": "mocha --compilers js:babel-core/register --recursive \"test/main.js\" \"test/issue.js\"",
     "test:cover": "babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive 'test/main.js'",
     "lint": "eslint modules/*.js",
     "clean": "rimraf dist",
